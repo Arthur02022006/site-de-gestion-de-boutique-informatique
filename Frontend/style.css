@@ -1,0 +1,46 @@
+/* Light mode (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --border-color: #dee2e6;
+  --btn-bg: #f8f9fa;
+  --btn-text: #000000;
+}
+
+/* Dark mode */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --border-color: #333333;
+  --btn-bg: #333333;
+  --btn-text: #ffffff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header {
+  border-bottom-color: var(--border-color) !important;
+}
+
+.btn {
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+  border-color: var(--border-color);
+}
+
+.form-control, .form-select {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
+.form-control:focus, .form-select:focus {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  border-color: var(--border-color);
+}
+
